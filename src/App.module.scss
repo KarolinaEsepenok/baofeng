@@ -1,3 +1,18 @@
 .app{
   background-color:#EAEAEA;
+  margin: 0 ;
+  padding: 0;
+  font-family:'Montserrat';
+  .centerApp{
+    max-width:1960px;
+    margin:0 auto;
+    padding: 20px 100px;
+    @media screen and (max-width: 900px) {
+      padding-left: 15px;
+      padding-right: 15px;
+
+    };
+  };
+
+
 }

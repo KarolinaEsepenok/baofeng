@@ -1,0 +1,24 @@
+@import '../common/mixins.scss';
+.greatingPage{
+  background-color: gray;
+  border-radius: 30px;
+  height: 197px;
+  display: flex;
+  justify-content: center;
+  .greatingName {
+max-width: 300px;
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+  & h2{
+    @include text(600, 30px, 110%, #FFF);
+
+  }
+  .greatingImg{
+  align-self: auto;
+     }
+   & img{
+    height: 197px;
+  }
+}

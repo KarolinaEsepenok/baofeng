@@ -1,0 +1,16 @@
+@import '../common/mixins.scss';
+.headersPage{
+  max-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  .headersLogo{
+    height: 80px;
+    width: 130px;
+  }
+  .headersLinks a{
+    text-decoration: none;
+    margin-left: 25px;
+    @include text(500, 18px, 110%, #101010);
+
+  }
+}
