@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/baofeng/static/css/main.557b7bf5.css",
+    "main.js": "/baofeng/static/js/main.1e5a1eaf.js",
+    "static/js/787.28cb0dcd.chunk.js": "/baofeng/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bf888.png": "/baofeng/static/media/bf888.01d29b80490dd4a98420.png",
+    "static/media/logoBaofeng.svg": "/baofeng/static/media/logoBaofeng.5cad1be300fb7a58d27532a8f94a778c.svg",
+    "index.html": "/baofeng/index.html",
+    "main.557b7bf5.css.map": "/baofeng/static/css/main.557b7bf5.css.map",
+    "main.1e5a1eaf.js.map": "/baofeng/static/js/main.1e5a1eaf.js.map",
+    "787.28cb0dcd.chunk.js.map": "/baofeng/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.557b7bf5.css",
+    "static/js/main.1e5a1eaf.js"
+  ]
+}
