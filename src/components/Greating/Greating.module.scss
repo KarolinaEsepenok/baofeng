@@ -1,24 +1,43 @@
 @import '../common/mixins.scss';
-.greatingPage{
+
+.greatingPage {
   background-color: gray;
   border-radius: 30px;
   height: 197px;
   display: flex;
   justify-content: center;
+
   .greatingName {
-max-width: 300px;
+    max-width: 300px;
     align-self: center;
     padding-left: 20px;
     padding-right: 100px;
+
+
+  @media screen and (max-width: 600px) {
+    padding-right: 10px;
   }
-  & h2{
+
+  };
+
+  & h2 {
     @include text(600, 30px, 110%, #FFF);
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    };
+    @media screen and (max-width: 380px) {
+      font-size: 12px;
+
+    };
 
   }
-  .greatingImg{
-  align-self: auto;
-     }
-   & img{
+
+  .greatingImg {
+    align-self: auto;
+
+  }
+
+  & img {
     height: 197px;
   }
 }

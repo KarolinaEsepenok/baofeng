@@ -6,11 +6,20 @@
   .headersLogo{
     height: 80px;
     width: 130px;
+    align-self: center;
+    @media screen and (max-width: 600px) {
+      width: 70px;
+
+    };
   }
   .headersLinks a{
     text-decoration: none;
     margin-left: 25px;
     @include text(500, 18px, 110%, #101010);
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+
+    };
 
   }
 }
