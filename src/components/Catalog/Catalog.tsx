@@ -11,7 +11,7 @@ const Catalog = () => {
             </h4>
             <div className={s.catalogItemMain}>
 
-            <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+            <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'hgkfjkjgdf dijf;dfjg dgfoijdoiugpoi efdjdroiufpo rfugoifdhj fgkjdfoikg fgkjfg;kdf iijgkdf '}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
