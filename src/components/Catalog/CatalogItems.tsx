@@ -46,9 +46,7 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
     };
     return (
         <div className={s.catalog}>
-            <div>
-                <h3>Наушники</h3>
-            </div>
+
             <div className={s.item}>
                 <CardMedia
                     component="img"
