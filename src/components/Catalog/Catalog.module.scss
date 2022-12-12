@@ -3,8 +3,11 @@
   .catalogItemMain{
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 590px) {
+      justify-content: center;
+
+    };
   }
 }
