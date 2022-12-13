@@ -12,8 +12,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Collapse from "@mui/material/Collapse";
-import bf888ЫЫ from "../img/bf888ЫЫ.jpg"
-import s from "../Catalog/CommonItem/Catalog.module.scss"
+import bf888ЫЫ from "../../img/bf888ЫЫ.jpg"
+import s from "./CatalogItems.module.scss"
 import {styled} from "@mui/material/styles";
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -45,7 +45,7 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
         setExpanded(!expanded);
     };
     return (
-        <div className={s.catalog}>
+        <div className={s.catalogItem}>
 
             <div className={s.item}>
                 <CardMedia

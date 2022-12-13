@@ -1,12 +1,17 @@
-.catalog{
+.catalogItem{
   font-family: "Montserrat";
+  width: 330px;
   .item{
-    min-width: 270px;
+
     border-radius: 10px;
-    max-width: 270px;
+
+
     & img{
-      border-radius: 15px;
+      border-radius: 30px;
       border: 3px solid #eaeaea;
+      @media screen and (max-width: 400px) {
+        width: 220px;
+      };
     }
     .itemName{
       padding:8px 0px 8px 16px;
@@ -14,6 +19,7 @@
     .itemDescr{
       font-family: "Montserrat";
       font-size: 15px;
+      font-weight: 600;
       text-align: start;
 
     }
