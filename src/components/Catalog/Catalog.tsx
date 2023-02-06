@@ -6,7 +6,7 @@ import s from "./Catalog.module.scss"
 const Catalog = () => {
     return (
         <div className={s.catalog}>
-            <h4>
+            <h4 id={'headphones'} >
                 Наушники
             </h4>
             <div className={s.catalogItemMain}>
@@ -20,7 +20,7 @@ const Catalog = () => {
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
             </div>
-            <h4>
+            <h4 id={'antenna'} >
                 Антенны
             </h4>
             <div className={s.catalogItemMain}>
@@ -30,7 +30,7 @@ const Catalog = () => {
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
             </div>
-            <h4>
+            <h4 id={'battery'}>
                 Батарейки
             </h4>
             <div className={s.catalogItemMain}>

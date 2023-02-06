@@ -5,7 +5,7 @@ import {ParticlesContainer} from "../Particles";
 
 const Greating = () => {
     return (
-        <div className={s.greatingPage}>
+        <div id={'main'} className={s.greatingPage}>
             <div className={s.particles}><ParticlesContainer /></div>
             <div className={s.greatingName}>
                 <h2>Аксессуары для раций Baofeng
