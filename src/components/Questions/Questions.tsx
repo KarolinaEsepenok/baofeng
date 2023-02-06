@@ -4,10 +4,11 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import s from './Questions.module.scss'
 
 export const Questions= ()=> {
     return (
-        <div>
+        <div className={s.questionsContainer}>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
