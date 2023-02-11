@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "../Catalog.module.scss";
 import CatalogItems from "../CommonItem/CatalogItems";
-import bf888ЫЫ from "src/components/img/bf888ЫЫ.jpg";
+import bf888ЫЫ from "../../img/bf888ЫЫ.jpg";
 
 const Headphones = () => {
     return (
