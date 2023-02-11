@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "src/components/Catalog/Catalog.module.scss";
+import s from "../Catalog/Catalog.module.scss";
 import CatalogItems from "../CommonItem/CatalogItems";
 import bf888ЫЫ from "src/components/img/bf888ЫЫ.jpg";
 
