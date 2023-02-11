@@ -5,7 +5,7 @@ import Headers from "./components/Header/Headers";
 import Greating from "./components/Greating/Greating";
 import Catalog from "./components/Catalog/Catalog";
 import {Questions} from "./components/Questions/Questions";
-import {ParticlesContainer} from "./components/Particles";
+
 
 function App() {
   return (
