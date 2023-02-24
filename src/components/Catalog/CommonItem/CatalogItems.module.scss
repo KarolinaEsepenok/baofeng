@@ -1,28 +1,36 @@
 .catalogItem{
-  font-family: "Montserrat";
-  width: 330px;
   .item{
-
     border-radius: 10px;
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-auto-rows: max-content;
+      grid-template-columns: 1fr 1fr;
+    };
+
 
 
     & img{
       border-radius: 30px;
       border: 3px solid #eaeaea;
+      object-fit: cover;
+      height: auto;
+      max-width: 270px;
       @media screen and (max-width: 400px) {
         width: 220px;
       };
     }
-    .itemName{
-      padding:8px 0px 8px 16px;
-    }
-    .itemDescr{
-      font-family: "Montserrat";
-      font-size: 15px;
-      font-weight: 600;
-      text-align: start;
+    .itemNameDescr{
+      .itemName{
+        padding:8px 0 8px 16px;
+      }
+      .itemDescr{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: start;
 
+      }
     }
+
   }
 }
 

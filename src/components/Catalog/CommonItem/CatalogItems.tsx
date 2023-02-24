@@ -1,18 +1,13 @@
 import React from 'react';
-import CardHeader from "@mui/material/CardHeader";
-import Avatar from "@mui/material/Avatar";
-import {red} from "@mui/material/colors";
+
 import IconButton, {IconButtonProps} from "@mui/material/IconButton";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Collapse from "@mui/material/Collapse";
-import bf888ЫЫ from "../../img/bf888ЫЫ.jpg"
 import s from "./CatalogItems.module.scss"
 import {styled} from "@mui/material/styles";
 
@@ -54,6 +49,7 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
                     image={props.img}
                     alt="Paella dish"
                 />
+                <div className={s.itemNameDescr}>
                 <CardContent>
                     <Typography variant="body2" color="text.secondary">{props.price}
                     </Typography>
@@ -75,6 +71,7 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
 
                     </CardContent>
                 </Collapse>
+                </div>
             </div>
         </div>
     );

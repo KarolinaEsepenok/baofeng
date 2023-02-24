@@ -6,6 +6,9 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    &img{
+      width: 20px;
+    }
 
     @media screen and (max-width: 590px) {
       justify-content: center;
