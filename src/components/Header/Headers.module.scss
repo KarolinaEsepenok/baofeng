@@ -5,14 +5,29 @@
   justify-content: space-between;
   position: relative;
   z-index: 1000;
+  @media screen and (max-width: 600px) {
+flex-direction: column;
+    padding-bottom: 50px;
+  };
   .headersLogo{
     height: 80px;
     width: 130px;
     align-self: center;
     @media screen and (max-width: 600px) {
-      width: 70px;
+      align-self: start;
+      padding-left: 15px;
+      height: 30px;
+
 
     };
+  }
+  .headersLinks{
+    @media screen and (max-width: 600px) {
+      display: flex;
+     flex-direction: column;
+
+    };
+
   }
   .headersLinks a{
     text-decoration: none;
@@ -29,9 +44,8 @@
               0.3em 0.3em 1em rgba(0,0,0,0.2);
     }
     @include text(500, 18px, 110%, #101010);
-    @media screen and (max-width: 600px) {
-      font-size: 12px;
-
+    @media screen and (max-width: 420px) {
+     font-size: 14px;
 
 
     };
