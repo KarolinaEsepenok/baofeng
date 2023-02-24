@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/baofeng/static/css/main.cc63c14d.css",
-    "main.js": "/baofeng/static/js/main.1afcc150.js",
+    "main.css": "/baofeng/static/css/main.3f954781.css",
+    "main.js": "/baofeng/static/js/main.aa2c0fd1.js",
     "static/js/787.28cb0dcd.chunk.js": "/baofeng/static/js/787.28cb0dcd.chunk.js",
     "static/media/bf888.png": "/baofeng/static/media/bf888.01d29b80490dd4a98420.png",
     "static/media/bf888ЫЫ.jpg": "/baofeng/static/media/bf888ЫЫ.3874736cb7e5d2e9e261.jpg",
+    "static/media/batUV5R.jpg": "/baofeng/static/media/batUV5R.bae9582015249efa4615.jpg",
     "static/media/logoBaofeng.svg": "/baofeng/static/media/logoBaofeng.5cad1be300fb7a58d27532a8f94a778c.svg",
     "index.html": "/baofeng/index.html",
-    "main.cc63c14d.css.map": "/baofeng/static/css/main.cc63c14d.css.map",
-    "main.1afcc150.js.map": "/baofeng/static/js/main.1afcc150.js.map",
+    "main.3f954781.css.map": "/baofeng/static/css/main.3f954781.css.map",
+    "main.aa2c0fd1.js.map": "/baofeng/static/js/main.aa2c0fd1.js.map",
     "787.28cb0dcd.chunk.js.map": "/baofeng/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc63c14d.css",
-    "static/js/main.1afcc150.js"
+    "static/css/main.3f954781.css",
+    "static/js/main.aa2c0fd1.js"
   ]
 }
