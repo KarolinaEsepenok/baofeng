@@ -50,13 +50,16 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
                     alt="Paella dish"
                 />
                 <div className={s.itemNameDescr}>
-                <CardContent>
-                    <Typography variant="body2" color="text.secondary">{props.price}
+              <CardContent >
+                 <div className={s.priceBtn}>
+                 <Typography variant="body2" color="text.secondary" className={s.price}>{props.price}
                     </Typography>
+                 <button className={s.btn}>Заказать</button> </div>
                 </CardContent>
+
                 <CardActions className={s.itemName} disableSpacing>
                     <div>{props.nameItem}</div>
-                    <ExpandMore
+                    <ExpandMore className={s.arrow}
                         expand={expanded}
                         onClick={handleExpandClick}
                         aria-expanded={expanded}

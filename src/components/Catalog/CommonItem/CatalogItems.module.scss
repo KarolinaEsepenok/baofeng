@@ -1,6 +1,10 @@
+@import '../../common/mixins';
 .catalogItem{
   .item{
     border-radius: 10px;
+    padding: 25px 25px 25px;
+    max-width: 270px;
+    border: 2px solid #e1dddd;
     @media screen and (max-width: 600px) {
       display: grid;
       grid-auto-rows: max-content;
@@ -22,12 +26,40 @@
     .itemNameDescr{
       .itemName{
         padding:8px 0 8px 16px;
+        .arrow{
+          &:hover{
+            color: #f39d3e;
+          }
+        }
       }
       .itemDescr{
         font-size: 15px;
         font-weight: 600;
         text-align: start;
 
+      }
+    }
+    .priceBtn{
+      display: flex;
+      justify-content: space-between;
+      font-family: Montserrat;
+      .price{
+        display: inline-block;
+        align-items: center;
+        color: #f39d3e;
+        align-self: center;
+        @include text(500, 18px, 110%, #f39d3e);
+
+
+      }
+      .btn{
+        background-color: #f39d3e;
+        border: none;
+        width: 110px;
+        border-radius: 25px;
+        height: 35px;
+        font-family: Montserrat;
+        @include text(400, 16px, 110%, #FFF);
       }
     }
 

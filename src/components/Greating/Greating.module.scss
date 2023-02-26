@@ -15,6 +15,7 @@
     padding-right: 100px;
 
 
+
   @media screen and (max-width: 600px) {
     padding-right: 10px;
   }
@@ -22,7 +23,9 @@
   };
 
   & h2 {
-    @include text(600, 30px, 110%, #FFF);
+font-family: Montserrat;
+
+    @include text(600, 30px, 110%, #f39d3e);
     @media screen and (max-width: 800px) {
       font-size: 16px;
     };
