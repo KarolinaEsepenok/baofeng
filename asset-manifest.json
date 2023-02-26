@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/baofeng/static/css/main.e6b45d74.css",
+    "main.css": "/baofeng/static/css/main.0c785ab4.css",
     "main.js": "/baofeng/static/js/main.933d4eec.js",
     "static/js/787.28cb0dcd.chunk.js": "/baofeng/static/js/787.28cb0dcd.chunk.js",
     "static/media/bf888.png": "/baofeng/static/media/bf888.01d29b80490dd4a98420.png",
@@ -8,12 +8,12 @@
     "static/media/batUV5R.jpg": "/baofeng/static/media/batUV5R.bae9582015249efa4615.jpg",
     "static/media/logoBaofeng.svg": "/baofeng/static/media/logoBaofeng.5cad1be300fb7a58d27532a8f94a778c.svg",
     "index.html": "/baofeng/index.html",
-    "main.e6b45d74.css.map": "/baofeng/static/css/main.e6b45d74.css.map",
+    "main.0c785ab4.css.map": "/baofeng/static/css/main.0c785ab4.css.map",
     "main.933d4eec.js.map": "/baofeng/static/js/main.933d4eec.js.map",
     "787.28cb0dcd.chunk.js.map": "/baofeng/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6b45d74.css",
+    "static/css/main.0c785ab4.css",
     "static/js/main.933d4eec.js"
   ]
 }
