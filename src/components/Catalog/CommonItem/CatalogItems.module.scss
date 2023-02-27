@@ -5,16 +5,16 @@
     border-radius: 10px;
     padding: 25px 25px 25px;
     max-width: 270px;
-
     @media screen and (max-width: 750px) {
       display: grid;
       grid-auto-rows: max-content;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
       max-width: 660px;
       padding: 0;
     };
-
-
+    @media screen and (max-width: 450px) {
+      grid-template-columns: 1fr 1fr;
+    };
 
     & img{
       border-radius: 30px;
@@ -23,13 +23,13 @@
       height: auto;
       max-width: 270px;
       @media screen and (max-width: 400px) {
-
       };
     }
     .itemNameDescr{
       .itemName{
         padding:8px 0 8px 16px;
         transition: 0.7s;
+
         .arrow{
           &:hover{
             color: #f39d3e;
@@ -45,12 +45,15 @@
     }
     .priceBtn{
       display: flex;
-      justify-content: space-between;
       font-family: Montserrat;
+      justify-content: space-between;
 
       @media screen and (max-width: 750px) {
         flex-direction: column;
         align-items: end;
+      };
+      @media screen and (max-width: 480px) {
+       padding: 16px 0;
       };
       .price{
         display: inline-block;

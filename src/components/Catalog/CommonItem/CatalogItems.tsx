@@ -37,6 +37,7 @@ export type CatalogItemsPropsType={
 const CatalogItems = (props:CatalogItemsPropsType) => {
     const [expanded, setExpanded] = React.useState(false);
     const [modalSuccess, setModalSuccess] = useState(false)
+    const [modalItem, setModalItem] = useState(false)
 
 
     const handleExpandClick = () => {
@@ -48,20 +49,22 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
     const handleCloseModal = () => {
         setModalSuccess(false)
 
-
     }
+    const isOpenItem = () => {
+        setModalItem(true);
+    };
     return (
         <div className={s.catalogItem}>
-
-            <div className={s.item}>
-                <CardMedia
+            <div className={s.item} >
+                <CardMedia onClick={isOpenItem}
                     component="img"
                     height="194"
                     image={props.img}
                     alt="Paella dish"
                 />
                 <div className={s.itemNameDescr}>
-              <CardContent >
+              <CardContent  >
+                  <div className={s.priceBtnContainer}>
                  <div className={s.priceBtn}>
                  <Typography variant="body2" color="text.secondary" className={s.price}>{props.price}
                     </Typography>
@@ -73,7 +76,7 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
                       <div className={s.buttons}>
                           <button className={s.button} onClick={handleCloseModal}>Close</button>
                       </div>
-                  </Modal>}
+                  </Modal>}</div>
                 </CardContent>
 
                 <CardActions className={s.itemName} disableSpacing>

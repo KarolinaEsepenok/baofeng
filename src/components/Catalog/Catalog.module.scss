@@ -1,15 +1,17 @@
 .catalog{
   position: relative;
   z-index: 1000;
-  font-family: "Montserrat";
+  font-family: Montserrat;
+
   .catalogContainer{
     position: relative;
     z-index: 1000;
   }
-
-
   .nameLink{
     display: flex;
+    @media screen and (max-width: 750px) {
+      justify-content:space-around;
+    };
     .linkToCatalog{
       align-self: center;
       margin-left: 100px;
@@ -29,9 +31,6 @@
     @media screen and (max-width: 600px) {
       justify-content: center;
       width: 95%;
-
-
-
     };
   }
 
