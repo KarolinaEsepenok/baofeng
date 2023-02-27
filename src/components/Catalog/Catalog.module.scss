@@ -1,6 +1,14 @@
 .catalog{
   position: relative;
   font-family: "Montserrat";
+  .nameLink{
+    display: flex;
+    .linkToCatalog{
+      align-self: center;
+      margin-left: 100px;
+    }
+  }
+
 
   .catalogItemMain{
     display: flex;

@@ -9,7 +9,7 @@ import error404 from '../../../assets/img/error404.svg'
 export const Error404 = () => {
     const navigate = useNavigate()
     const openHomePage = () => {
-        navigate('/signIn')
+        navigate('/')
     }
 
     return (

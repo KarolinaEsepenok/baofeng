@@ -6,16 +6,18 @@ import {Link} from "react-router-dom";
 
 export const Battery = () => {
     return (
-        <> <h4 id={'battery'}>
+        <>
+            <div  className={s.nameLink}><h4 id={'battery'}>
             Батарейки
-        </h4>
-            <div className={s.catalogItemMain}>
+            </h4>
+                <Link className={s.linkToCatalog} to={'/batteries'}>Посмотреть все</Link></div>
 
+            <div className={s.catalogItemMain}>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <div><Link to={'/batteries'}>Посмотреть все</Link></div>
+
             </div></>
     );
 };
