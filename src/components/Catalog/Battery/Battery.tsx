@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export const Battery = () => {
     return (
-        <>
+        <div className={s.catalogContainer}>
             <div  className={s.nameLink}><h4 id={'battery'}>
             Батарейки
             </h4>
@@ -18,6 +18,6 @@ export const Battery = () => {
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
-            </div></>
+            </div></div>
     );
 };

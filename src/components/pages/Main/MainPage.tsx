@@ -2,18 +2,17 @@ import React from 'react';
 
 import {Catalog} from '../../Catalog/Catalog';
 
-import s from '../../../App.module.scss';
+import s from './MainPage.module.scss';
 import {Questions} from '../Main/Questions/Questions';
 
 
 export const MainPage = () => {
     return (
 
-        <div className={s.app}>
-
-                <div><Catalog/></div>
+       <div >
+            <div className={s.catalogContainer}><Catalog/></div>
             <Questions/>
 
-        </div>
+       </div>
     );
 };

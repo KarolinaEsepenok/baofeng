@@ -7,7 +7,7 @@ import Headers from '../../common/Header/Headers';
 
 export const Antennas = () => {
     return (
-        <> <div className={s.nameLink}><h4 id={'antenna'} >
+        <div className={s.catalogContainer}> <div className={s.nameLink}><h4 id={'antenna'} >
             Антенны
         </h4> <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link>
         </div>
@@ -17,6 +17,6 @@ export const Antennas = () => {
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={bf888ЫЫ} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
-            </div></>
+            </div></div>
     );
 };

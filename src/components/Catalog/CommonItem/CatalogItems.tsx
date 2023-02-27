@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import IconButton, {IconButtonProps} from "@mui/material/IconButton";
 import CardMedia from "@mui/material/CardMedia";
@@ -10,6 +10,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Collapse from "@mui/material/Collapse";
 import s from "./CatalogItems.module.scss"
 import {styled} from "@mui/material/styles";
+import {Modal} from '../../common/Modal/Modal';
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -35,10 +36,20 @@ export type CatalogItemsPropsType={
 
 const CatalogItems = (props:CatalogItemsPropsType) => {
     const [expanded, setExpanded] = React.useState(false);
+    const [modalSuccess, setModalSuccess] = useState(false)
+
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+    const isOpenModal = () => {
+        setModalSuccess(true);
+    };
+    const handleCloseModal = () => {
+        setModalSuccess(false)
+
+
+    }
     return (
         <div className={s.catalogItem}>
 
@@ -54,7 +65,15 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
                  <div className={s.priceBtn}>
                  <Typography variant="body2" color="text.secondary" className={s.price}>{props.price}
                     </Typography>
-                 <button className={s.btn}>Заказать</button> </div>
+                 <button onClick={isOpenModal} className={s.btn}>Заказать</button> </div>
+                  {modalSuccess && <Modal handleCloseModal={handleCloseModal}
+                                          title={'Заказ'}
+                                          value={'Введите, пожалуйста, для заказа свой номер телефона. Наш специалист свяжется с Вами.'}>
+                      <div><input type={'tel'}/></div>
+                      <div className={s.buttons}>
+                          <button className={s.button} onClick={handleCloseModal}>Close</button>
+                      </div>
+                  </Modal>}
                 </CardContent>
 
                 <CardActions className={s.itemName} disableSpacing>

@@ -1,6 +1,13 @@
 .catalog{
   position: relative;
+  z-index: 1000;
   font-family: "Montserrat";
+  .catalogContainer{
+    position: relative;
+    z-index: 1000;
+  }
+
+
   .nameLink{
     display: flex;
     .linkToCatalog{
@@ -27,4 +34,6 @@
 
     };
   }
+
+
 }
