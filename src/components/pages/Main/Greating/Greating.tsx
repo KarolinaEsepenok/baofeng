@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Greating.module.scss'
-import bf888 from '../img/bf888.png'
-import {ParticlesContainer} from "../Particles";
+import bf888 from '../../../../assets/img/bf888.png'
+import {ParticlesContainer} from '../../../Particles';
 
 const Greating = () => {
     return (
@@ -12,7 +12,7 @@ const Greating = () => {
                 </h2>
             </div>
             <div className={s.greatingImg}>
-                <img src={bf888}/>
+                <img alt={'bao'} src={bf888}/>
             </div>
 
         </div>

@@ -1,17 +1,15 @@
 import React from 'react';
 import s from "./Catalog.module.scss"
-import Antenns from "../Catalog/Antenns/Antenns";
-import Headphones from "../Catalog/Headphones/Headphones";
-import Battery from "../Catalog/Battery/Battery";
+import {Antennas} from '../Catalog/Antennas/Antennas';
+import {Headphones} from "../Catalog/Headphones/Headphones";
+import {Battery} from "../Catalog/Battery/Battery";
 
-const Catalog = () => {
+export const Catalog = () => {
     return (
         <div className={s.catalog}>
             <Headphones/>
-            <Antenns/>
+            <Antennas/>
             <Battery/>
         </div>
     );
 };
-
-export default Catalog;
