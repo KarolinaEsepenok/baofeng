@@ -12,6 +12,8 @@ import s from "./CatalogItems.module.scss"
 import {styled} from "@mui/material/styles";
 import {Modal} from '../../common/Modal/Modal';
 
+
+
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
 }
@@ -44,11 +46,14 @@ const CatalogItems = (props:CatalogItemsPropsType) => {
         setExpanded(!expanded);
     };
     const isOpenModal = () => {
+        const noScroll = require('no-scroll');
         setModalSuccess(true);
+       noScroll.on()
     };
     const handleCloseModal = () => {
+        const noScroll = require('no-scroll');
         setModalSuccess(false)
-
+        noScroll.off()
     }
     const isOpenItem = () => {
         setModalItem(true);

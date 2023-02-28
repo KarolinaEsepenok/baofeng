@@ -7,9 +7,11 @@ import {Battery} from "../Catalog/Battery/Battery";
 export const Catalog = () => {
     return (
         <div className={s.catalog}>
-            <Headphones/>
+
             <Antennas/>
             <Battery/>
+            <Headphones/>
+
         </div>
     );
 };

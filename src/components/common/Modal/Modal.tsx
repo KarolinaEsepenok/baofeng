@@ -24,7 +24,6 @@ export const Modal: React.FC<ModalType> = ({children,title, value, handleCloseMo
 
     useEffect(() => {
         document.addEventListener('keydown', onKeydown)
-
         return () => document.removeEventListener('keydown', onKeydown)
     })
 
