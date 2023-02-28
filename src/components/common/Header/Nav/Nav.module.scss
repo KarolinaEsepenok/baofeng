@@ -1,0 +1,29 @@
+@import 'src/components/styles/mixins';
+.headersLinks{
+  @media screen and (max-width: 680px) {
+    display: none;
+  };
+
+}
+.headersLinks a{
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 13px;
+  transition: 0.7s;
+  font-family: Montserrat;
+  &:hover{
+    color: #f39d3e;
+
+  }
+  @include text(500, 18px, 110%, #101010);
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  };
+
+  .headersLink a.active{
+    color: #000;
+  }
+
+}

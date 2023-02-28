@@ -1,21 +1,16 @@
 @import '../../styles/mixins';
-.headersPage{
+
+.headersPage {
   max-height: 200px;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1000;
+  padding-bottom: 70px;
   @media screen and (max-width: 600px) {
-flex-direction: row;
-    padding-bottom: 50px;
+    flex-direction: row;
   };
-  @media screen and (max-width: 500px) {
-    padding-bottom: 20px;
-
-
-  };
-  .headersLogo{
-    height: 80px;
+  .headersLogo {
     width: 130px;
     align-self: center;
     @media screen and (max-width: 600px) {
@@ -24,16 +19,18 @@ flex-direction: row;
       height: 30px;
     };
   }
-  .headersLinks{
+
+  .headersLinks {
     @media screen and (max-width: 600px) {
       display: flex;
-     flex-direction: column;
+      flex-direction: column;
 
 
     };
 
   }
-  .headersLinks a{
+
+  .headersLinks a {
     text-decoration: none;
     margin-left: 5px;
     cursor: pointer;
@@ -41,16 +38,18 @@ flex-direction: row;
     border-radius: 13px;
     transition: 0.7s;
     font-family: Montserrat;
-    &:hover{
+
+    &:hover {
       color: #f39d3e;
 
     }
+
     @include text(500, 18px, 110%, #101010);
     @media screen and (max-width: 420px) {
-     font-size: 14px;
+      font-size: 14px;
     };
 
-    .headersLink a.active{
+    .headersLink a.active {
       color: #000;
     }
 
