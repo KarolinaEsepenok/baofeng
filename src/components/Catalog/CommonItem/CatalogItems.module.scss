@@ -1,7 +1,9 @@
 @import '../../styles/mixins';
-.catalogItem{
+
+.catalogItem {
   position: relative;
-  .item{
+
+  .item {
     border-radius: 10px;
     padding: 25px 25px 25px;
     max-width: 270px;
@@ -16,7 +18,7 @@
       grid-template-columns: 1fr 1fr;
     };
 
-    & img{
+    & img {
       border-radius: 30px;
       border: 3px solid #eaeaea;
       object-fit: cover;
@@ -25,25 +27,28 @@
       @media screen and (max-width: 400px) {
       };
     }
-    .itemNameDescr{
-      .itemName{
-        padding:8px 0 8px 16px;
+
+    .itemNameDescr {
+      .itemName {
+        padding: 8px 0 8px 16px;
         transition: 0.7s;
 
-        .arrow{
-          &:hover{
+        .arrow {
+          &:hover {
             color: #f39d3e;
           }
         }
       }
-      .itemDescr{
+
+      .itemDescr {
         font-size: 15px;
         font-weight: 600;
         text-align: start;
 
       }
     }
-    .priceBtn{
+
+    .priceBtn {
       display: flex;
       font-family: Montserrat;
       justify-content: space-between;
@@ -53,38 +58,99 @@
         align-items: end;
       };
       @media screen and (max-width: 480px) {
-       padding: 16px 0;
+        padding: 16px 0;
       };
-      .price{
+
+      .price {
         display: inline-block;
         align-items: center;
         color: #f39d3e;
         align-self: center;
         @include text(500, 18px, 110%, #f39d3e);
         @media screen and (max-width: 750px) {
-         align-self: end;
+          align-self: end;
           padding-bottom: 10px;
           padding-right: 5px;
         }
-        };
       }
-      .btn{
-        background-color: #f39d3e;
-        border: none;
-        width: 110px;
-        border-radius: 25px;
-        height: 35px;
-        font-family: Montserrat;
-        transition: 0.7s;
-        @include text(400, 16px, 110%, #FFF);
-        &:hover{
+    ;
+    }
 
-          background-color: grey;
+    .btn {
+      background-color: #f39d3e;
+      border: none;
+      width: 110px;
+      border-radius: 25px;
+      height: 35px;
+      font-family: Montserrat;
+      transition: 0.7s;
+      @include text(400, 16px, 110%, #FFF);
 
-        }
+      &:hover {
+
+        background-color: grey;
+
+      }
+    }
+  }
+
+  .inputPhoneContainer {
+    .inputPhone {
+      width: 285px;
+      height: 37px;
+      border-radius: 25px;
+      background-color: #D6D6D6;
+      border: none;
+      padding:0 14px;
+      margin-top:5px;
+      margin-bottom: 38px;
+    }
+
+    .labelPhone {
+      opacity: 0.8;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .inputPhoneBtn {
+      width: 110px;
+      background-color: #f39d3e;
+      border: none;
+      height: 35px;
+      border-radius: 25px;
+      font-family: Montserrat;
+      transition: 0.7s;
+      @include text(400, 16px, 110%, #FFF);
+
+      &:hover {
+        background-color: grey;
+
       }
     }
 
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
   }
+
+  .button {
+    border: none;
+    height: 35px;
+    border-radius: 25px;
+    font-family: Montserrat;
+    width: 100px;
+    background-color: #eaeaea;
+    transition: 0.7s;
+    @include text(700, 16px, 110%, red);
+
+    &:hover {
+      background-color:red;
+      color: #FFFFFF;
+
+    }
+  }
+
+}
 
 
