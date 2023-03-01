@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/baofeng/static/css/main.afbfd7ab.css",
-    "main.js": "/baofeng/static/js/main.58ccdc63.js",
+    "main.js": "/baofeng/static/js/main.552cd1da.js",
     "static/js/787.28cb0dcd.chunk.js": "/baofeng/static/js/787.28cb0dcd.chunk.js",
     "static/media/bf888.png": "/baofeng/static/media/bf888.01d29b80490dd4a98420.png",
     "static/media/walkie.jpg": "/baofeng/static/media/walkie.3874736cb7e5d2e9e261.jpg",
@@ -12,11 +12,11 @@
     "static/media/closeBtn.svg": "/baofeng/static/media/closeBtn.97f95338c3976d30e29ac67fc8e15e59.svg",
     "static/media/burger.svg": "/baofeng/static/media/burger.ccb3e3ccd5104f2abd560596da3e7138.svg",
     "main.afbfd7ab.css.map": "/baofeng/static/css/main.afbfd7ab.css.map",
-    "main.58ccdc63.js.map": "/baofeng/static/js/main.58ccdc63.js.map",
+    "main.552cd1da.js.map": "/baofeng/static/js/main.552cd1da.js.map",
     "787.28cb0dcd.chunk.js.map": "/baofeng/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afbfd7ab.css",
-    "static/js/main.58ccdc63.js"
+    "static/js/main.552cd1da.js"
   ]
 }
