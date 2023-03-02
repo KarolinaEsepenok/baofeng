@@ -37,8 +37,8 @@ export type CatalogItemsPropsType = {
 
 const CatalogItems = (props: CatalogItemsPropsType) => {
     const [expanded, setExpanded] = React.useState(false);
+    const [modal, setModal] = useState(false)
     const [modalSuccess, setModalSuccess] = useState(false)
-    const [modalItem, setModalItem] = useState(false)
 
 
     const handleExpandClick = () => {
@@ -46,21 +46,27 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     };
     const isOpenModal = () => {
         const noScroll = require('no-scroll');
-        setModalSuccess(true);
+        setModal(true);
         noScroll.on()
     };
     const handleCloseModal = () => {
         const noScroll = require('no-scroll');
+        setModal(false)
         setModalSuccess(false)
         noScroll.off()
     }
-    const isOpenItem = () => {
-        setModalItem(true);
-    };
+    const handleSuccess= () => {
+        setModalSuccess(true)
+
+    }
+
+    {/* const isOpenItem = () => {
+        setModal(true);
+    };*/}
     return (
         <div className={s.catalogItem}>
             <div className={s.item}>
-                <CardMedia onClick={isOpenItem}
+                <CardMedia
                            component="img"
                            height="194"
                            image={props.img}
@@ -74,7 +80,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                 </Typography>
                                 <button onClick={isOpenModal} className={s.btn}>Купить</button>
                             </div>
-                            {modalSuccess && <Modal handleCloseModal={handleCloseModal}
+                            {modal && <Modal handleCloseModal={handleCloseModal}
                                                     title={'Заказ'}
                                                     value={'Наш специалист свяжется с Вами.'}>
                                 <div className={s.inputPhoneContainer}>
@@ -85,13 +91,21 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                                pattern='\s{0,}\+{1,1}375\s{0,}\({0,1}(([2]{1}([5]{1}[9]{1}))([3]{1}[3]{1})([4]{1}[4]{1}))\)\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}'/>
                                         <div className={s.buttons}>
                                             <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                            <button type={'submit'} className={s.inputPhoneBtn}>Заказать</button>
+                                            <button type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
                                         </div>
                                     </form>
                                 </div>
 
 
-                            </Modal>}</div>
+                            </Modal>}
+                            {modalSuccess && <Modal handleCloseModal={handleCloseModal}
+                                                    title={'Благодарим за заказ!'}
+                                                    value={'Ваш номер успешно отправлен!'}>
+                                <div className={s.buttons}>
+                                    <button className={s.button} onClick={handleCloseModal}>Назад</button>
+                                    <button type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
+                                </div></Modal>}
+                            </div>
                     </CardContent>
 
                     <CardActions className={s.itemName} disableSpacing>
