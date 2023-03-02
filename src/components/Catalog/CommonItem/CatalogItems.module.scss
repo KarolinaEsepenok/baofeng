@@ -139,14 +139,12 @@
     height: 35px;
     border-radius: 25px;
     font-family: Montserrat;
-    width: 100px;
-    background-color: #eaeaea;
+    width: 110px;
+    background-color: #eb3b3b;
     transition: 0.7s;
-    @include text(700, 16px, 110%, red);
-
+    @include text(700, 16px, 110%, #FFF);
     &:hover {
-      background-color:red;
-      color: #FFFFFF;
+     opacity: 0.5;
 
     }
   }
