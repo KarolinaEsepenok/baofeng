@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import IconButton, {IconButtonProps} from "@mui/material/IconButton";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,6 +11,8 @@ import Collapse from "@mui/material/Collapse";
 import s from "./CatalogItems.module.scss"
 import {styled} from "@mui/material/styles";
 import {Modal} from '../../common/Modal/Modal';
+import {useFormik} from "formik";
+import axios from "axios";
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -35,12 +37,35 @@ export type CatalogItemsPropsType = {
 
 }
 
+interface FormikErrorType {
+    phone?: string
+
+}
+
 const CatalogItems = (props: CatalogItemsPropsType) => {
     const [expanded, setExpanded] = React.useState(false);
     const [modal, setModal] = useState(false)
     const [modalSuccess, setModalSuccess] = useState(false)
+    const [isLoading, setIsloading] = useState(false)
 
+const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
+    setIsloading(true)
+    axios.post("https://back-portfolio-neon.vercel.app/", {
+        name: values.name,
+        phone: values.phone,
 
+    })
+        .then(() => {
+            setModalSuccess(true)
+           resetForm()
+        })
+        .catch(() => {
+            alert("Something went wrong... Please try again.")
+        })
+        .finally(() => {
+            setIsloading(false)
+        })
+}
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
@@ -57,8 +82,34 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     }
     const handleSuccess= () => {
         setModalSuccess(true)
-
     }
+
+    const formik = useFormik({
+        initialValues: {
+            name: '', phone: ''
+        },
+        validate: values => {
+            const errors: FormikErrorType = {}
+
+            if (!values.phone) {
+                errors.phone = 'Phone is required'
+            } else if (errors.phone) {
+                errors.phone = 'Invalid phone'
+            }
+            if (!values.name) {
+                return {
+                    name: 'Please, enter your name'
+                }
+            }
+            return errors
+        },onSubmit: (values, {resetForm}) => {
+          // @ts-ignore
+            // @ts-ignore
+            handleSubmit(values,resetForm)
+
+        },
+    });
+
 
     {/* const isOpenItem = () => {
         setModal(true);
@@ -82,16 +133,23 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                             </div>
                             {modal && <Modal handleCloseModal={handleCloseModal}
                                                     title={'Заказ'}
-                                                    value={'Наш специалист свяжется с Вами.'}>
+                                                    value={''}>
                                 <div className={s.inputPhoneContainer}>
-                                    <form>
+                                    <form id={'telegram'} onSubmit={formik.handleSubmit}>
+
+                                        <label className={s.labelPhone} htmlFor="phone">Вaше имя:</label>
+                                        <input disabled={isLoading} placeholder={'Имя'} className={formik.errors.name?`${s.inputError}  ${s.inputPhone}`:`${s.inputPhone}`} required type="text" id="name"
+                                               {...formik.getFieldProps("name")}/>
                                         <label className={s.labelPhone} htmlFor="phone">Введите свой номер
                                             телефона:</label>
-                                        <input placeholder={'+XXXXX-XXX-XX-XX'} className={s.inputPhone} required type="tel" id="phone" name="phone"
-                                               pattern='\s{0,}\+{1,1}375\s{0,}\({0,1}(([2]{1}([5]{1}[9]{1}))([3]{1}[3]{1})([4]{1}[4]{1}))\)\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}'/>
+                                        <input disabled={isLoading} placeholder={'+XXXXX-XXX-XX-XX'} className={formik.errors.name?`${s.inputError}  ${s.inputPhone}`:`${s.inputPhone}`} required type="tel" id="phone"
+                                               {...formik.getFieldProps("phone")} />
+
                                         <div className={s.buttons}>
                                             <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                            <button type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
+                                            <button disabled={
+                                                !!formik.errors.name || !!formik.errors.phone
+                                            } type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
                                         </div>
                                     </form>
                                 </div>
@@ -103,7 +161,6 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                                     value={'Ваш номер успешно отправлен!'}>
                                 <div className={s.buttons}>
                                     <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                    <button type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
                                 </div></Modal>}
                             </div>
                     </CardContent>
