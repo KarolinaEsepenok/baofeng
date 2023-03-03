@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 
 import IconButton, {IconButtonProps} from "@mui/material/IconButton";
 import CardMedia from "@mui/material/CardMedia";
@@ -40,6 +40,7 @@ export type CatalogItemsPropsType = {
 interface FormikErrorType {
     phone?: string
 
+
 }
 
 const CatalogItems = (props: CatalogItemsPropsType) => {
@@ -47,25 +48,38 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     const [modal, setModal] = useState(false)
     const [modalSuccess, setModalSuccess] = useState(false)
     const [isLoading, setIsloading] = useState(false)
+    const TOKEN = "6220759086:AAGG4rUAJetNvJl4frhmaQLNOuJNCn_1w-4";
+    const CHAT_ID = "-1001765030414";
 
-const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
-    setIsloading(true)
-    axios.post("https://back-portfolio-neon.vercel.app/", {
-        name: values.name,
-        phone: values.phone,
 
-    })
-        .then(() => {
-            setModalSuccess(true)
-           resetForm()
+
+    const handleSubmit = (values: { name: string, phone: number }, resetForm: any) => {
+        setIsloading(true)
+        let message = `Заявка с сайта!\n`;
+        message += `Отравитель: ${values.name}\n`;
+        message += `Номер телефона: ${values.phone}`;
+        console.log(message)
+
+        axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+            chat_id: CHAT_ID,
+            parse_made: 'HTML',
+            text: message,
+            //name: values.name,
+           // phone: values.phone,
+
         })
-        .catch(() => {
-            alert("Something went wrong... Please try again.")
-        })
-        .finally(() => {
-            setIsloading(false)
-        })
-}
+            .then(() => {
+                setModalSuccess(true)
+
+                resetForm()
+            })
+            .catch(() => {
+                alert('ОШИБКА')
+            })
+            .finally(() => {
+                setIsloading(false)
+            })
+    }
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
@@ -80,9 +94,10 @@ const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
         setModalSuccess(false)
         noScroll.off()
     }
-    const handleSuccess= () => {
+    const handleSuccess = () => {
         setModalSuccess(true)
     }
+
 
     const formik = useFormik({
         initialValues: {
@@ -92,20 +107,20 @@ const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
             const errors: FormikErrorType = {}
 
             if (!values.phone) {
-                errors.phone = 'Phone is required'
-            } else if (errors.phone) {
-                errors.phone = 'Invalid phone'
+                errors.phone = 'Введите номер телефона'
+            } else if (!/^[\d\+][\d\(\)\ -]{4,14}\d$/.test(values.phone)) {
+                errors.phone = 'Неправильный формат'
             }
             if (!values.name) {
                 return {
-                    name: 'Please, enter your name'
+                    name: 'Пожалуйста, введите своё имя'
                 }
             }
             return errors
-        },onSubmit: (values, {resetForm}) => {
-          // @ts-ignore
+        }, onSubmit: (values, {resetForm}) => {
             // @ts-ignore
-            handleSubmit(values,resetForm)
+            // @ts-ignore
+            handleSubmit(values, resetForm)
 
         },
     });
@@ -113,15 +128,16 @@ const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
 
     {/* const isOpenItem = () => {
         setModal(true);
-    };*/}
+    };*/
+    }
     return (
         <div className={s.catalogItem}>
             <div className={s.item}>
                 <CardMedia
-                           component="img"
-                           height="194"
-                           image={props.img}
-                           alt="Paella dish"
+                    component="img"
+                    height="194"
+                    image={props.img}
+                    alt="Paella dish"
                 />
                 <div className={s.itemNameDescr}>
                     <CardContent>
@@ -132,24 +148,32 @@ const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
                                 <button onClick={isOpenModal} className={s.btn}>Купить</button>
                             </div>
                             {modal && <Modal handleCloseModal={handleCloseModal}
-                                                    title={'Заказ'}
-                                                    value={''}>
+                                             title={'Заказ'}
+                                             value={''}>
                                 <div className={s.inputPhoneContainer}>
                                     <form id={'telegram'} onSubmit={formik.handleSubmit}>
-
-                                        <label className={s.labelPhone} htmlFor="phone">Вaше имя:</label>
-                                        <input disabled={isLoading} placeholder={'Имя'} className={formik.errors.name?`${s.inputError}  ${s.inputPhone}`:`${s.inputPhone}`} required type="text" id="name"
+                                        <label className={s.labelPhone} htmlFor="name">Вaше имя:</label>
+                                        <input disabled={isLoading}
+                                               placeholder={''}
+                                               className={s.inputPhone}
+                                               required type="text" id="name"
                                                {...formik.getFieldProps("name")}/>
+                                        {formik.errors.name ? <div className={s.inputError}>{formik.errors.name}</div> : <div className={s.cont}></div>}
                                         <label className={s.labelPhone} htmlFor="phone">Введите свой номер
                                             телефона:</label>
-                                        <input disabled={isLoading} placeholder={'+XXXXX-XXX-XX-XX'} className={formik.errors.name?`${s.inputError}  ${s.inputPhone}`:`${s.inputPhone}`} required type="tel" id="phone"
+                                        <input disabled={isLoading}
+                                               placeholder={'+375'}
+                                               className={s.inputPhone}
+                                               required type="tel" id="phone"
                                                {...formik.getFieldProps("phone")} />
+                                        {formik.errors.phone ? <div className={s.inputError}>{formik.errors.phone}</div> : <div className={s.cont}></div>}
 
                                         <div className={s.buttons}>
                                             <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                            <button disabled={
-                                                !!formik.errors.name || !!formik.errors.phone
-                                            } type={'submit'} className={s.inputPhoneBtn} onClick={handleSuccess}>Заказать</button>
+                                            <button disabled={!!formik.errors.name || !!formik.errors.phone}
+                                             type={'submit'} className={s.inputPhoneBtn}
+                                                    onClick={handleSuccess}>Заказать
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
@@ -161,8 +185,9 @@ const handleSubmit = (values:{name:string,phone:number}, resetForm:any)=>{
                                                     value={'Ваш номер успешно отправлен!'}>
                                 <div className={s.buttons}>
                                     <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                </div></Modal>}
-                            </div>
+                                </div>
+                            </Modal>}
+                        </div>
                     </CardContent>
 
                     <CardActions className={s.itemName} disableSpacing>

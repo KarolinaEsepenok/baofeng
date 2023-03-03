@@ -60,7 +60,7 @@ export const ParticlesContainer = () => {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        //enable: true,
                     },
                     move: {
 
