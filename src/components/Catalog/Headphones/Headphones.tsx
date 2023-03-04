@@ -8,7 +8,10 @@ import {Link} from "react-router-dom";
 
 export const Headphones = () => {
     return (
+        <div>
+            <div><Link to='/'>Назад</Link></div>
         <div className={s.catalogContainer}>
+
          <div  className={s.nameLink}><h4 id={'headphones'} >
              Наушники
          </h4>
@@ -21,6 +24,6 @@ export const Headphones = () => {
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
 
-            </div></div>
+            </div></div></div>
     );
 };

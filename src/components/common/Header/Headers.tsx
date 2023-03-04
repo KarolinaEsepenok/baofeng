@@ -7,7 +7,7 @@ import {BurgerNav} from '../Header/BurgerNav/BurgerNav';
 
 export const Headers = () => {
     return (
-        <div className={s.headersPage}>
+        <div className={s.headersPage} id={'main'}>
             <div className={s.headersLogo}><img src={logoBaofeng} alt={'logo'}/></div>
             <Nav/>
             <BurgerNav/>

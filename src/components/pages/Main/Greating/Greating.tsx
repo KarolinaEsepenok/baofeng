@@ -3,6 +3,7 @@ import s from './Greating.module.scss'
 import bf888 from '../../../../assets/img/bf888.png'
 import {ParticlesContainer} from '../../../Particles';
 
+
 const Greating = () => {
     return (
         <div id={'main'} className={s.greatingPage}>
@@ -14,6 +15,8 @@ const Greating = () => {
             <div className={s.greatingImg}>
                 <img alt={'bao'} src={bf888}/>
             </div>
+
+
 
         </div>
     );
