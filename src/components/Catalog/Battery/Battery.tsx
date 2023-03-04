@@ -13,7 +13,7 @@ export const Battery = () => {
             <div  className={s.nameLink}><h4 id={'battery'}>
             Батарейки
             </h4>
-                <Link className={s.linkToCatalog} to={'/batteries'}>Посмотреть все</Link></div>
+                </div>
 
             <div className={s.catalogItemMain}>
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>

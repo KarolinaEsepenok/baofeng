@@ -11,7 +11,7 @@ export const Antennas = () => {
 
             <div className={s.nameLink}>
                 <h4 id={'antenna'} >Антенны</h4>
-                <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link>
+
         </div>
             <div className={s.catalogItemMain}>
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
