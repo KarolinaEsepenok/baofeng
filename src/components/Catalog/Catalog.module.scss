@@ -14,11 +14,16 @@
     display: flex;
     @include text(700, 18px, 110%, #101010);
     @media screen and (max-width: 750px) {
-      justify-content:space-around;
+      justify-content:space-between;
     };
     .linkToCatalog{
       align-self: center;
       margin-left: 100px;
+      color: #f39d3e;
+      transition: 0.7s;
+      &hover{
+        color: gray;
+      }
     }
   }
 

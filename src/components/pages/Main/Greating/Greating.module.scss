@@ -1,11 +1,43 @@
 @import '../../../styles/mixins';
 
+.greatingService{
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  @include text(600, 30px, 110%, #000);
+}
+  .btn{
+    background-color: #f39d3e;
+    border: none;
+    width: 110px;
+    border-radius: 25px;
+    height: 35px;
+    font-family: Montserrat;
+    transition: 0.7s;
+    @include text(400, 16px, 110%, #FFF);
+
+    &:hover {
+      background-color: grey;
+
+
+
+    }
+
+}
+
+
+
 .greatingPage {
   background-color: gray;
   border-radius: 30px;
   height: 197px;
   display: flex;
   justify-content: center;
+
 
 
   .greatingName {
