@@ -1,6 +1,7 @@
 @import 'src/components/styles/mixins';
 .headersLinks{
-  @media screen and (max-width: 680px) {
+  align-self: center;
+  @media screen and (max-width: 740px) {
     display: none;
   };
 
@@ -17,7 +18,7 @@
     color: #f39d3e;
 
   }
-  @include text(500, 18px, 110%, #101010);
+  @include text(700, 18px, 110%, #101010);
   @media screen and (max-width: 750px) {
     font-size: 18px;
   };

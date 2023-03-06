@@ -1,3 +1,4 @@
+@import 'src/components/styles/mixins';
 .catalog{
 
   font-family: Montserrat;
@@ -11,6 +12,7 @@
   }
   .nameLink{
     display: flex;
+    @include text(700, 18px, 110%, #101010);
     @media screen and (max-width: 750px) {
       justify-content:space-around;
     };

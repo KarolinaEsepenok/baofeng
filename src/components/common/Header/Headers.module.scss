@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: relative;
   z-index: 1000;
-  padding-bottom: 70px;
+  padding-bottom: 89px;
   @media screen and (max-width: 600px) {
     flex-direction: row;
   };
@@ -17,6 +17,9 @@
       align-self: start;
       padding-left: 15px;
       height: 30px;
+    };
+    @media screen and (max-width: 480px) {
+      width: 97px;
     };
   }
 
