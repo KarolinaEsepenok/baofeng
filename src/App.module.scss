@@ -3,9 +3,13 @@
   margin: 0 ;
   padding: 0;
   .centerApp{
-    max-width:1960px;
+    max-width:1300px;
     margin:0 auto;
     padding: 20px 100px;
+    @media screen and (max-width: 1480px) {
+      max-width:900px;
+    };
+
     @media screen and (max-width: 1000px) {
       padding-left: 50px;
       padding-right: 50px;
