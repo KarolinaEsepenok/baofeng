@@ -133,7 +133,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     return (
         <div className={s.catalogItem}>
             <div className={s.item}>
-                <CardMedia
+                <CardMedia className={s.img}
                     component="img"
                     height="194"
                     image={props.img}

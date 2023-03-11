@@ -10,7 +10,6 @@ export const Catalog = () => {
     return (
         <div className={s.catalog}>
             <div className={s.catalogContainer}>
-
                 <div className={s.nameLink}>
                     <h4 id={'antenna'} >Антенны</h4>
                     <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link>
@@ -20,8 +19,6 @@ export const Catalog = () => {
                     <CatalogItems img={batUV5R} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-
-
                 </div></div>
             <div className={s.catalogContainer}>
 

@@ -18,22 +18,15 @@
     @media screen and (max-width: 450px) {
       grid-template-columns: 1fr 1fr;
     };
-
-    & img {
+  .img{
       border-radius: 30px;
       border: 3px solid #eaeaea;
       object-fit: cover;
       height: auto;
-
-      @media screen and (max-width: 600px) {
-
-      };
-      @media screen and (max-width: 400px) {
-
-      };
+      max-width: 270px;
     }
-
     .itemNameDescr {
+      padding: 16px 0;
       .itemName {
         padding: 8px 0 8px 16px;
         transition: 0.7s;

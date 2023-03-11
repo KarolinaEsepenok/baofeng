@@ -1,15 +1,12 @@
 @import 'src/components/styles/mixins';
 .catalog{
-
   font-family: Montserrat;
-
   .catalogContainer{
     //position: relative;
     //z-index: 1000;
     position: inherit;
     z-index: 1000;
     overflow-y: hidden;
-  }
   .nameLink{
     display: flex;
     @include text(700, 18px, 110%, #101010);
@@ -26,16 +23,11 @@
       }
     }
   }
-
-
   .catalogItemMain{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    &img{
-      width: 20px;
-    }
 
     @media screen and (max-width: 600px) {
       justify-content: center;
@@ -43,5 +35,4 @@
     };
   }
 
-
-}
+}}
