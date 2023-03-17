@@ -7,6 +7,11 @@
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  height: 60px;
+  background-color: #fff;
+  align-items: center;
+  padding: 5px 40px;
+  border-radius: 25px;
 
   @include text(600, 30px, 110%, #000);
 }
@@ -22,14 +27,8 @@
 
     &:hover {
       background-color: grey;
-
-
-
     }
-
 }
-
-
 
 .greatingPage {
   background-color: gray;
