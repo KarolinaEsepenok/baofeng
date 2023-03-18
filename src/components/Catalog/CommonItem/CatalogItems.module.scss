@@ -149,7 +149,13 @@
       &:hover {
         background-color: grey;
       }
+      .disabled{
+        color: black;
+      }
 
+    }
+    .inputErrorBtn{
+      background-color: black;
     }
     .disabled{
       opacity: 0.5;
@@ -173,6 +179,9 @@
     @include text(700, 16px, 110%, #FFF);
     &:hover {
      opacity: 0.5;
+    }
+    .disabled{
+      color: black;
     }
 
 

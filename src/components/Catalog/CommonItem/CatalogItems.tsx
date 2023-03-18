@@ -39,6 +39,7 @@ export type CatalogItemsPropsType = {
 
 interface FormikErrorType {
     phone?: string
+    name? : string
 
 
 }
@@ -47,6 +48,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     const [expanded, setExpanded] = React.useState(false);
     const [modal, setModal] = useState(false)
     const [modalSuccess, setModalSuccess] = useState(false)
+    const [modalError, setModalError] = useState(false)
     const [isLoading, setIsloading] = useState(false)
     const TOKEN = "6220759086:AAGG4rUAJetNvJl4frhmaQLNOuJNCn_1w-4";
     const CHAT_ID = "-1001765030414";
@@ -97,6 +99,9 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     const handleSuccess = () => {
         setModalSuccess(true)
     }
+    const handleError = () => {
+        setModalError(true)
+    }
 
 
     const formik = useFormik({
@@ -116,6 +121,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                     name: 'Пожалуйста, введите своё имя'
                 }
             }
+
             return errors
         }, onSubmit: (values, {resetForm}) => {
             // @ts-ignore
@@ -130,6 +136,8 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
         setModal(true);
     };*/
     }
+    // @ts-ignore
+    // @ts-ignore
     return (
         <div className={s.catalogItem}>
             <div className={s.item}>
@@ -153,8 +161,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                 <div className={s.inputPhoneContainer}>
                                     <form id={'telegram'} onSubmit={formik.handleSubmit}>
                                         <label className={s.labelPhone} htmlFor="name">Вaше имя:</label>
-                                        <input disabled={isLoading}
-                                               placeholder={''}
+                                        <input disabled={isLoading} autoFocus={true}
                                                className={s.inputPhone}
                                                required type="text" id="name"
                                                {...formik.getFieldProps("name")}/>
@@ -169,10 +176,10 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                         {formik.errors.phone ? <div className={s.inputError}>{formik.errors.phone}</div> : <div className={s.cont}></div>}
 
                                         <div className={s.buttons}>
-                                            <button className={s.button} onClick={handleCloseModal}>Назад</button>
-                                            <button disabled={!!formik.errors.name || !!formik.errors.phone}
+                                            <button className={s.button}disabled={!!formik.errors.name || !!formik.errors.phone || !formik.values.name || !formik.values.phone} onClick={handleCloseModal}>Назад</button>
+                                            <button disabled={!!formik.errors.name || !!formik.errors.phone || !formik.values.name || !formik.values.phone}
                                              type={'submit'} className={s.inputPhoneBtn}
-                                                    onClick={handleSuccess}>Заказать
+                                                    onClick={handleSuccess || handleError}>Заказать
                                             </button>
                                         </div>
                                     </form>
@@ -183,6 +190,12 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                             {modalSuccess && <Modal handleCloseModal={handleCloseModal}
                                                     title={'Благодарим за заказ!'}
                                                     value={'Ваш номер успешно отправлен!'}>
+                                <div className={s.buttons}>
+                                    <button className={s.button} onClick={handleCloseModal}>Назад</button>
+                                </div>
+                            </Modal>}{modalError &&<Modal handleCloseModal={handleCloseModal}
+                                             title={'Щшибка!'}
+                                             value={'Ваш номер успешно отправлен!'}>
                                 <div className={s.buttons}>
                                     <button className={s.button} onClick={handleCloseModal}>Назад</button>
                                 </div>
