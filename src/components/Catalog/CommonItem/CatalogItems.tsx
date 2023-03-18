@@ -174,12 +174,11 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                                                required type="tel" id="phone"
                                                {...formik.getFieldProps("phone")} />
                                         {formik.errors.phone ? <div className={s.inputError}>{formik.errors.phone}</div> : <div className={s.cont}></div>}
-
                                         <div className={s.buttons}>
-                                            <button className={s.button}disabled={!!formik.errors.name || !!formik.errors.phone || !formik.values.name || !formik.values.phone} onClick={handleCloseModal}>Назад</button>
-                                            <button disabled={!!formik.errors.name || !!formik.errors.phone || !formik.values.name || !formik.values.phone}
+                                            <button className={s.button} onClick={handleCloseModal}>Назад</button>
+                                            <button disabled={!!formik.errors.phone || !! formik.errors.name}
                                              type={'submit'} className={s.inputPhoneBtn}
-                                                    onClick={handleSuccess || handleError}>Заказать
+                                                    onClick={handleSuccess}>Заказать
                                             </button>
                                         </div>
                                     </form>
