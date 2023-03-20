@@ -7,11 +7,24 @@
     position: inherit;
     z-index: 1000;
     overflow-y: hidden;
+    .linkToCatalog{
+      align-self: center;
+      color: #f39d3e;
+      transition: 0.7s;
+      display: inline-block;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      &hover{
+        color: gray;
+      }
+    }
   .nameLink{
     display: flex;
-    @include text(700, 18px, 110%, #101010);
+    padding-left: 25px;
+    @include text(700, 27px, 110%, #101010);
     @media screen and (max-width: 750px) {
       justify-content:space-between;
+      @include text(700, 20px, 110%, #101010);
     };
     .linkToCatalog{
       align-self: center;
