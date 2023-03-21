@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+.linkBack{
+  display: inline-block;
+}
+.catalogContainer{
+  //position: relative;
+  //z-index: 1000;
+  position: inherit;
+  z-index: 1000;
+  overflow-y: hidden;
+
+  .linkToCatalog{
+    align-self: center;
+    color: #f39d3e;
+    transition: 0.7s;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    &hover{
+      color: gray;
+    }
+  }
+  .nameLink{
+    display: flex;
+    padding-left: 25px;
+    @include text(700, 27px, 110%, #101010);
+    @media screen and (max-width: 750px) {
+      justify-content:space-between;
+      @include text(700, 20px, 110%, #101010);
+    }};
+    .catalogItemMain{
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 600px) {
+        justify-content: center;
+        width: 95%;
+      };
+    }}

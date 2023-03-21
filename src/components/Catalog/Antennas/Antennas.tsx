@@ -1,12 +1,13 @@
 import React from 'react';
-import s from "../Catalog.module.scss";
+
+import s from "./Antennas.module.scss"
 import CatalogItems from "../CommonItem/CatalogItems";
 import walkie from '../../../assets/img/walkie.jpg';
 import {Link} from "react-router-dom";
 export const Antennas = () => {
     return (
-        <div>
-        <div><Link to='/'>Назад</Link></div>
+        <div className={s.antennasCont}>
+        <Link className={s.linkBack} to='/'>Назад</Link>
         <div className={s.catalogContainer}>
 
             <div className={s.nameLink}>
