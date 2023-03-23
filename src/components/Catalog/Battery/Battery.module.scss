@@ -1,7 +1,21 @@
 @import '../../styles/mixins';
 .linkBack{
+  align-self: center;
+  color: gray;
+  transition: 0.7s;
   display: inline-block;
+  padding-left: 25px;
+  font-size: 22px;
+  margin-top:30px;
+  & hover{
+    color: #000000;
+  }
+  .imgBackHome{
+    width: 18px;
+    padding-right: 25px;
+  }
 }
+
 .catalogContainer{
   //position: relative;
   //z-index: 1000;
@@ -11,18 +25,19 @@
 
   .linkToCatalog{
     align-self: center;
-    color: #f39d3e;
+    color: gray;
     transition: 0.7s;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-top:30px;
     padding-left: 25px;
-    &hover{
-      color: gray;
+    & hover{
+      color: #000000;
     }
   }
   .nameLink{
     display: flex;
     padding-left: 25px;
+    padding-top: 30px;
     @include text(700, 27px, 110%, #101010);
     @media screen and (max-width: 750px) {
       justify-content:space-between;
@@ -30,8 +45,13 @@
     }};
   .catalogItemMain{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 1500px) {
+      grid-template-columns: 1fr 1fr;
+    };
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+    };
     @media screen and (max-width: 600px) {
       justify-content: center;
       width: 95%;
