@@ -28,12 +28,12 @@
       justify-content:space-between;
       @include text(700, 20px, 110%, #101010);
     }};
-    .catalogItemMain{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  .catalogItemMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-      @media screen and (max-width: 600px) {
-        justify-content: center;
-        width: 95%;
-      };
-    }}
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+      width: 95%;
+    };
+  }}

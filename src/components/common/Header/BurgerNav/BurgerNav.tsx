@@ -18,8 +18,8 @@ export const BurgerNav = () => {
                 <Link activeClass={s.active} to='antenna' spy={true} smooth={true} offset={0}
                       duration={500}>Антенны</Link>
                 <Link activeClass={s.active} to='battery' spy={true} smooth={true} offset={0}
-                      duration={500}>Батарейки</Link>
-                <Link activeClass={s.active} to='battery' spy={true} smooth={true} offset={0} duration={500}>О
+                      duration={500}>Аккумуляторы</Link>
+                <Link activeClass={s.active} to='aboutUs' spy={true} smooth={true} offset={0} duration={500}>О
                     нас</Link>
             </div>
             <img alt={'burgerMenu'} src={burger} onClick={burgerOpenHandler} className={s.burgerBtn}/>

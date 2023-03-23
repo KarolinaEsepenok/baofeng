@@ -7,8 +7,8 @@ const Nav = () => {
         <div className={s.headersLinks}>
             <Link activeClass={s.active}  to='headphones' spy={true} smooth={true} offset={0} duration={500}>Наушники</Link>
             <Link activeClass={s.active}  to='antenna' spy={true} smooth={true} offset={0} duration={500}>Антенны</Link>
-            <Link activeClass={s.active}  to='battery' spy={true} smooth={true} offset={0} duration={500}>Батарейки</Link>
-            <Link activeClass={s.active}  to='battery' spy={true} smooth={true} offset={0} duration={500}>О нас</Link>
+            <Link activeClass={s.active}  to='battery' spy={true} smooth={true} offset={0} duration={500}>Аккумуляторы</Link>
+            <Link activeClass={s.active}  to='aboutUs' spy={true} smooth={true} offset={0} duration={500}>О нас</Link>
 
         </div>
     );
