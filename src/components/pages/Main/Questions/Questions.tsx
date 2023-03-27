@@ -15,12 +15,29 @@ export const Questions= ()=> {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography>Accordion 1</Typography>
+                    <Typography>Доставка</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Cпособы доставки
+                        Доставка курьером по Беларуси от 9.00 руб.
+                        Доставка по Минску 7 рублей, осуществляется в день заказа или на следующий день.
+                        Доставка почтой [ в том числе курьерская скоростная доставка EMS] на следующий день
+                        Рассчитать стоимость отправки:
+                        1.Мелкий пакет  от 4.0р
+                        http://tarifikator.belpost.by/forms/internal/small.php
+                        2.Посылка  от 6.0р
+                        http://tarifikator.belpost.by/forms/internal/parcel.php
+                        3.Курьер EMS  от 8.0р
+                        http://tarifikator.belpost.by/forms/internal/ems.php
+
+                        Самовывоз в Минске (предупредить за час). Бесплатно.
+                        Обязательно заблаговременно предупредить о своём намерении приехать, согласовать адрес и время.
+                        Транспортная компания: самовывоз
+                        Мы сотрудничаем с http://evropochta.by «Европочта» - это быстроразвивающийся  почтовый сервис, который занимается доставкой посылок по всей Беларуси!
+                        Комиссия за денежный перевод при получении 1,5% от суммы заказа, на белпочте, к примеру, 3%
+                        https://evropochta.by/about/offices/
+
                     </Typography>
                 </AccordionDetails>
             </Accordion>
