@@ -8,7 +8,7 @@ import s from './Questions.module.scss'
 
 export const Questions= ()=> {
     return (
-        <div id={'aboutUs'} className={s.questionsContainer}>
+        <div id={'aboutUs'} className={s.questionsContainer}>Вопросы
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
