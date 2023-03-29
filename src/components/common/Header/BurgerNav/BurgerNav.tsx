@@ -8,7 +8,6 @@ export const BurgerNav = () => {
 
     const burgerOpenHandler = () => {
         setMenuIsOpen(!menuIsOpen)
-        console.log(menuIsOpen)
     }
     return (
         <div className={s.burgerLinks}>
