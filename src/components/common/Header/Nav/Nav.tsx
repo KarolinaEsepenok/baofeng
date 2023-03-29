@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './Nav.module.scss';
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom";
 
 const Nav = () => {
     return (
         <div className={s.headersLinks}>
-            <Link activeClass={s.active}  to='headphones' spy={true} smooth={true} offset={0} duration={500}>Наушники</Link>
-            <Link activeClass={s.active}  to='antenna' spy={true} smooth={true} offset={0} duration={500}>Антенны</Link>
-            <Link activeClass={s.active}  to='battery' spy={true} smooth={true} offset={0} duration={500}>Аккумуляторы</Link>
-            <Link activeClass={s.active}  to='aboutUs' spy={true} smooth={true} offset={0} duration={500}>О нас</Link>
+            <Link  to={'/headphones'} >Наушники</Link>
+            <Link  to={'/antennas'}>Антенны</Link>
+            <Link  to={'/batteries'} >Аккумуляторы</Link>
+            <Link  to='aboutUs' >О нас</Link>
 
         </div>
     );

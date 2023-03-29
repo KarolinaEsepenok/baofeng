@@ -1,25 +1,22 @@
 import React, {useState} from 'react';
 import s from './BurgerNav.module.scss';
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom";
 import burger from '../../../../assets/img/burger.svg'
 
 export const BurgerNav = () => {
-    const [menuIsOpen, setMenuIsOpen]= useState(false)
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
 
-    const burgerOpenHandler=()=>{
-       setMenuIsOpen(!menuIsOpen)
+    const burgerOpenHandler = () => {
+        setMenuIsOpen(!menuIsOpen)
         console.log(menuIsOpen)
     }
     return (
         <div className={s.burgerLinks}>
             <div className={menuIsOpen ? `${s.burgerLinksItems} + ${s.show}` : s.burgerLinksItems}>
-                <Link activeClass={s.active} to='headphones' spy={true} smooth={true} offset={0}
-                      duration={500}>Наушники</Link>
-                <Link activeClass={s.active} to='antenna' spy={true} smooth={true} offset={0}
-                      duration={500}>Антенны</Link>
-                <Link activeClass={s.active} to='battery' spy={true} smooth={true} offset={0}
-                      duration={500}>Аккумуляторы</Link>
-                <Link activeClass={s.active} to='aboutUs' spy={true} smooth={true} offset={0} duration={500}>О
+                <Link to={'/headphones'}>Наушники</Link>
+                <Link to={'/antennas'}>Антенны</Link>
+                <Link to={'/batteries'}>Аккумуляторы</Link>
+                <Link to='aboutUs'>О
                     нас</Link>
             </div>
             <img alt={'burgerMenu'} src={burger} onClick={burgerOpenHandler} className={s.burgerBtn}/>
