@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/baofeng/static/css/main.1f6d5595.css",
-    "main.js": "/baofeng/static/js/main.5daa59c2.js",
+    "main.css": "/baofeng/static/css/main.5b001edf.css",
+    "main.js": "/baofeng/static/js/main.eb01708d.js",
     "static/js/787.28cb0dcd.chunk.js": "/baofeng/static/js/787.28cb0dcd.chunk.js",
     "static/media/bf888.png": "/baofeng/static/media/bf888.01d29b80490dd4a98420.png",
     "static/media/walkie.jpg": "/baofeng/static/media/walkie.3874736cb7e5d2e9e261.jpg",
     "static/media/error404.svg": "/baofeng/static/media/error404.dae7af4892f2a3abe805a174178919f2.svg",
     "static/media/batUV5R.jpg": "/baofeng/static/media/batUV5R.bae9582015249efa4615.jpg",
     "static/media/logoBaofeng.svg": "/baofeng/static/media/logoBaofeng.5cad1be300fb7a58d27532a8f94a778c.svg",
+    "static/media/viber.svg": "/baofeng/static/media/viber.8dc15f232a985aef74ed03315e7a3148.svg",
+    "static/media/telegram.svg": "/baofeng/static/media/telegram.17041232c86fdbc127e2f87541348769.svg",
     "index.html": "/baofeng/index.html",
     "static/media/arrowLeft.svg": "/baofeng/static/media/arrowLeft.4f8d8d70fc9b86f1b40ae2408c08f1b4.svg",
     "static/media/closeBtn.svg": "/baofeng/static/media/closeBtn.97f95338c3976d30e29ac67fc8e15e59.svg",
     "static/media/burger.svg": "/baofeng/static/media/burger.ccb3e3ccd5104f2abd560596da3e7138.svg",
-    "main.1f6d5595.css.map": "/baofeng/static/css/main.1f6d5595.css.map",
-    "main.5daa59c2.js.map": "/baofeng/static/js/main.5daa59c2.js.map",
+    "main.5b001edf.css.map": "/baofeng/static/css/main.5b001edf.css.map",
+    "main.eb01708d.js.map": "/baofeng/static/js/main.eb01708d.js.map",
     "787.28cb0dcd.chunk.js.map": "/baofeng/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f6d5595.css",
-    "static/js/main.5daa59c2.js"
+    "static/css/main.5b001edf.css",
+    "static/js/main.eb01708d.js"
   ]
 }
