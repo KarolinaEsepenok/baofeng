@@ -23,7 +23,9 @@ export const Footer = () => {
                 <a href={"viber://add?number=375447043787"}>
                 <img src={viber} alt={viber}/></a>
                 <a href={"tel:+375447043787"}>
-                    <img src={phone} alt={phone}/></a></div>
+                    <img src={phone} alt={phone}/></a>
+                <a href={"tel:+375447043787"}>
+                    +375447043787</a></div>
 
         </div>
     );
