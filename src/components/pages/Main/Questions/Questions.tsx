@@ -47,12 +47,11 @@ export const Questions= ()=> {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography>Accordion 2</Typography>
+                    <Typography>Возврат и гарантия</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -77,12 +76,17 @@ export const Questions= ()=> {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography>Accordion 2</Typography>
+                    <Typography>Информация для покупателя</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Индивидуальный предприниматель Семёнов Александр Борисович
+                        г. Минск, ул. Козлова, д. 29а
+                        Дата регистрации в Торговом реестре/Реестре бытовых услуг: Не подлежит занесению в реестр
+                        Номер в Торговом реестре/Реестре бытовых услуг: Не подлежит занесению в реестр, Республика Беларусь
+                        УНП: 192194196
+                        Регистрационный орган: Минский горисполком
+                        Дата регистрации компании: 15.01.2014
                     </Typography>
                 </AccordionDetails>
             </Accordion>
