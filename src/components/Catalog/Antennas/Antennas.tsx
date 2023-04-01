@@ -5,9 +5,14 @@ import CatalogItems from "../CommonItem/CatalogItems";
 import walkie from '../../../assets/img/walkie.jpg';
 import {Link} from "react-router-dom";
 import arrowLeft from "../../../assets/img/arrowLeft.svg"
+import Headers from '../../common/Header/Headers';
+import Greating from '../../pages/Main/Greating/Greating';
+import {Footer} from '../../common/Footer/Footer';
 export const Antennas = () => {
     return (
         <div className={s.antennasCont}>
+            <Headers/>
+            <Greating/>
             <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft} />На главную страницу</Link>
         <div className={s.catalogContainer}>
 
@@ -21,6 +26,8 @@ export const Antennas = () => {
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
 
-            </div></div></div>
+            </div>
+        </div>
+        <Footer/></div>
     );
 };
