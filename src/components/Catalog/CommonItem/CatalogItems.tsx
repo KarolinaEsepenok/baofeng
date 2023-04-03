@@ -34,7 +34,7 @@ export type CatalogItemsPropsType = {
     nameItem: string
     price: string
     descriptionItem: string
-    title:string
+    id?:string
 
 
 }
@@ -147,7 +147,7 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
                     component="img"
                     height="194"
                     image={props.img}
-                    alt="Paella dish" aria-label={props.title} data-microtip-position="top"
+                    alt="Paella dish"
                 />
                 <div className={s.itemNameDescr}>
                     <CardContent>

@@ -8,6 +8,8 @@ import arrowLeft from "../../../assets/img/arrowLeft.svg"
 import Headers from '../../common/Header/Headers';
 import Greating from '../../pages/Main/Greating/Greating';
 import {Footer} from '../../common/Footer/Footer';
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 
 export const Antennas = () => {
@@ -16,19 +18,24 @@ export const Antennas = () => {
         <div className={s.antennasCont}>
             <Headers/>
             <Greating/>
-            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft} />На главную страницу</Link>
+            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft}alt={'back'} />На главную страницу</Link>
         <div className={s.catalogContainer}>
 
             <div className={s.nameLink}>
                 <h4>Антенны</h4>
         </div>
             <div className={s.catalogItemMain}>
-                <CatalogItems title={''} img={walkie}  nameItem={'Описание модели'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems id={"appTitle"} img={walkie}  nameItem={'Описание модели'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
+                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <ReactTooltip
+                    anchorId="appTitle"
+                    place="bottom"
+                    content="Hello world! I'm a Tooltip"
+                />
             </div>
         </div>
         <Footer/></div>

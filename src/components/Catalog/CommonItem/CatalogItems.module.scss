@@ -9,11 +9,11 @@
     border-radius: 10px;
     padding: 25px 25px 25px;
     max-width: 270px;
-    transition: 0.9s
+    border:0.3px solid #dedbdb;
+    transition: 2s
   ;
     &:hover{
-      border:0.5px solid #f39d3e;
-      transform: scale(1.001);
+      border:0.3px solid #f39d3e;
     }
 
     @media screen and (max-width: 750px) {
@@ -32,6 +32,7 @@
       object-fit: cover;
       height: auto;
       max-width: 270px;
+
     }
     .itemNameDescr {
       padding: 16px 0;

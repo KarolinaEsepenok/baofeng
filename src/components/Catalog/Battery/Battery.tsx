@@ -13,14 +13,14 @@ export const Battery = () => {
         <div className={s.antennasCont}>
             <Headers/>
             <Greating/>
-            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft} />На главную страницу</Link>
+            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft}alt={'back'}/>На главную страницу</Link>
             <div className={s.catalogContainer}>
 
                 <div className={s.nameLink}>
                     <h4  >Аккумуляторы</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
