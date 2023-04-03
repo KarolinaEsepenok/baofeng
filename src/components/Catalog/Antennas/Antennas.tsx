@@ -8,7 +8,10 @@ import arrowLeft from "../../../assets/img/arrowLeft.svg"
 import Headers from '../../common/Header/Headers';
 import Greating from '../../pages/Main/Greating/Greating';
 import {Footer} from '../../common/Footer/Footer';
+
+
 export const Antennas = () => {
+    // @ts-ignore
     return (
         <div className={s.antennasCont}>
             <Headers/>
@@ -20,11 +23,11 @@ export const Antennas = () => {
                 <h4>Антенны</h4>
         </div>
             <div className={s.catalogItemMain}>
-                <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems title={''} img={walkie}  nameItem={'Описание модели'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems title={'fdfdf'}  img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
 
             </div>
         </div>
