@@ -24,7 +24,7 @@ export const Catalog = () => {
             <div className={s.catalogContainer}>
 
                 <div  className={s.nameLink}><h4 id={'battery'}>
-                    Батарейки
+                    Аккумуляторы
                 </h4>
                </div>
 

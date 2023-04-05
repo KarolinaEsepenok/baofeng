@@ -15,10 +15,10 @@ export const Error404 = () => {
     return (
         <div className={s.errorContainer}>
             <div className={s.errorInfo}>
-                <p>Ooops!</p>
-                <p className={s.descrError}>Sorry! Page not found!</p>
-                <button  onClick={openHomePage}>
-                    Back to home page
+                <p>УПС!</p>
+                <p className={s.descrError}>Извините, страница не найдена</p>
+                <button className={s.btnBack}  onClick={openHomePage}>
+                    Назад
                 </button>
             </div>
             <img className={s.error404Img} src={error404} alt={'404'} />
