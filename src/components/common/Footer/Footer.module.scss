@@ -11,13 +11,27 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 20px 40px;
+  @media screen and (max-width: 750px) {
+    grid-template-columns: 1fr 1fr;
+  };
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+
+  };
 
   .footerLogo{
     width: 130px;
+    margin-bottom: 10px;
   }
   .footerLinks{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+    @media screen and (max-width: 450px) {
+      margin-top: 10px;
+
+    };
+
 
   } .footerLinks a{
       display: inline-block;
@@ -31,6 +45,7 @@
     width: 31px;
     height: 31px;
     margin-right: 10px;
+    margin-bottom: 10px;
 
   }
 }

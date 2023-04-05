@@ -25,12 +25,12 @@ export const Antennas = () => {
                 <h4>Антенны</h4>
         </div>
             <div className={s.catalogItemMain}>
-                <CatalogItems id={"appTitle"} img={walkie}  nameItem={'Описание модели'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems id={"appTitle"} img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
-                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie}nameItem={'Основные характеристики'}price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <ReactTooltip
                     anchorId="appTitle"
                     place="bottom"

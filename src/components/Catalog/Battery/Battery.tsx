@@ -20,11 +20,11 @@ export const Battery = () => {
                     <h4  >Аккумуляторы</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems  img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
 
                 </div></div>
         <Footer/></div>

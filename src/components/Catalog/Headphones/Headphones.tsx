@@ -20,12 +20,12 @@ export const Headphones = () => {
                     <h4 >Наушники</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems  img={walkie} nameItem={'Модель'} price={'48,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'34,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'31,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'20,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'15,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'48,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'}price={'30,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'31,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'} descriptionItem={'Наушники'}/>
 
 
                 </div></div>

@@ -15,10 +15,10 @@ export const Catalog = () => {
 
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'} data-tooltip="Всплывающая подсказка"/>
-                    <CatalogItems img={batUV5R} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'} data-tooltip="Всплывающая подсказка"/>
+                    <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 </div>
                 <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link></div>
             <div className={s.catalogContainer}>
@@ -29,10 +29,10 @@ export const Catalog = () => {
                </div>
 
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'}price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
 
                 </div><Link className={s.linkToCatalog} to={'/batteries'}>Посмотреть все</Link>
@@ -44,10 +44,10 @@ export const Catalog = () => {
                 </h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'30,00'} descriptionItem={'hdskjhf;dkj'}/>
-                    <CatalogItems img={batUV5R} nameItem={'Модель'} price={'45,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'10,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Модель'} price={'10,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'hdskjhf;dkj'}/>
+                    <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'45,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'10,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'10,00'} descriptionItem={'gdhdhhdhdh'}/>
 
                 </div>
                 <Link className={s.linkToCatalog} to={'/headphones'}>Посмотреть все</Link></div>
