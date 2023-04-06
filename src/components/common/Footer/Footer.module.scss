@@ -11,9 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 20px 40px;
-  @media screen and (max-width: 750px) {
-    grid-template-columns: 1fr 1fr;
-  };
+
   @media screen and (max-width: 450px) {
     grid-template-columns: 1fr;
 
