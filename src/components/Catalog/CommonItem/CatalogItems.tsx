@@ -13,6 +13,7 @@ import {styled} from "@mui/material/styles";
 import {Modal} from '../../common/Modal/Modal';
 import {useFormik} from "formik";
 import axios from "axios";
+import Tooltip from "@mui/material/Tooltip";
 
 
 
@@ -36,15 +37,11 @@ export type CatalogItemsPropsType = {
     price: string
     descriptionItem: string
     id?:string
-
-
 }
 
 interface FormikErrorType {
     phone?: string
     name? : string
-
-
 }
 
 const CatalogItems = (props: CatalogItemsPropsType) => {
@@ -145,12 +142,12 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     return (
         <div className={s.catalogItem}>
            <div className={s.item}>
-               <CardMedia className={s.img}
+              <CardMedia className={s.img}
                     component="img"
                     height="194"
                     image={props.img}
                     alt="Paella dish"
-                />
+               />
                 <div className={s.itemNameDescr}>
                     <CardContent>
                         <div className={s.priceBtnContainer}>
