@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {ReactElement, useState} from 'react';
 
 import IconButton, {IconButtonProps} from "@mui/material/IconButton";
 import CardMedia from "@mui/material/CardMedia";
@@ -13,6 +13,7 @@ import {styled} from "@mui/material/styles";
 import {Modal} from '../../common/Modal/Modal';
 import {useFormik} from "formik";
 import axios from "axios";
+
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -140,10 +141,11 @@ const CatalogItems = (props: CatalogItemsPropsType) => {
     }
     // @ts-ignore
     // @ts-ignore
+    // @ts-ignore
     return (
         <div className={s.catalogItem}>
-            <div className={s.item}>
-                <CardMedia className={s.img}
+           <div className={s.item}>
+               <CardMedia className={s.img}
                     component="img"
                     height="194"
                     image={props.img}

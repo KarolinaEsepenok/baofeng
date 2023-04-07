@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import walkie from '../../assets/img/walkie.jpg';
 import CatalogItems from '../Catalog/CommonItem/CatalogItems';
 import batUV5R from '../../assets/img/batUV5R.jpg';
+import Tippy from '@tippyjs/react';
 
 export const Catalog = () => {
     return (
@@ -15,7 +16,7 @@ export const Catalog = () => {
 
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'} data-tooltip="Всплывающая подсказка"/>
+                    <Tippy content="Hello"><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'} /></Tippy>
                     <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
