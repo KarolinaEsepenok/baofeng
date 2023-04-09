@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import s from "./Catalog.module.scss"
 import {Link} from "react-router-dom";
 
@@ -10,12 +10,12 @@ import Tooltip from "@mui/material/Tooltip";
 
 //type PropsWithChildren<P> = P & { children?: ReactNode }
 //export interface YourType {
- //   type1: string,
-  //  children?: any;
+//   type1: string,
+//  children?: any;
 //}
 
 
-export const Catalog= () => {
+export const Catalog = () => {
 
     return (
         <div className={s.catalog}>
@@ -24,8 +24,8 @@ export const Catalog= () => {
                     <h4 id={'antenna'}>Антенны</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
-                                            descriptionItem={'gdhdhhdhdh'}/>
+                    <Tooltip title="LALAALALLALALA"><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
+                                  descriptionItem={'gdhdhhdhdh'}/></Tooltip>
                     <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
                                   descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
