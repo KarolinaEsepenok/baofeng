@@ -25,16 +25,26 @@ export const Catalog = () => {
                     <h4 id={'antenna'}>Антенны</h4>
                 </div>
                 < div className={s.catalogItemMain}>
-                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"  placement="top-end" arrow TransitionComponent={Zoom}>
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                             placement="top-end" arrow TransitionComponent={Zoom}>
                         <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
                     </Tooltip>
-                    <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
-                                  descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
-                                  descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
-                                  descriptionItem={'gdhdhhdhdh'}/>
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                             placement="top-end" arrow TransitionComponent={Zoom}>
+                        <div><CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
+                                           descriptionItem={'gdhdhhdhdh'}/></div>
+                    </Tooltip>
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                             placement="top-end" arrow TransitionComponent={Zoom}>
+                        <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
+                                           descriptionItem={'gdhdhhdhdh'}/></div>
+                    </Tooltip>
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                             placement="top-end" arrow TransitionComponent={Zoom}>
+                        <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
+                                           descriptionItem={'gdhdhhdhdh'}/></div>
+                    </Tooltip>
                 </div>
                 <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link></div>
             <div className={s.catalogContainer}>
