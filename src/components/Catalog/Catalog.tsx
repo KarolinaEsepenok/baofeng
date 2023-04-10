@@ -6,6 +6,7 @@ import walkie from '../../assets/img/walkie.jpg';
 import CatalogItems from '../Catalog/CommonItem/CatalogItems';
 import batUV5R from '../../assets/img/batUV5R.jpg';
 import Tooltip from "@mui/material/Tooltip";
+import {Zoom} from "@mui/material";
 
 
 //type PropsWithChildren<P> = P & { children?: ReactNode }
@@ -23,9 +24,11 @@ export const Catalog = () => {
                 <div className={s.nameLink}>
                     <h4 id={'antenna'}>Антенны</h4>
                 </div>
-                <div className={s.catalogItemMain}>
-                    <Tooltip title="LALAALALLALALA"><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
-                                  descriptionItem={'gdhdhhdhdh'}/></Tooltip>
+                < div className={s.catalogItemMain}>
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"  placement="top-end" arrow TransitionComponent={Zoom}>
+                        <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
+                                           descriptionItem={'gdhdhhdhdh'}/></div>
+                    </Tooltip>
                     <CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
                                   descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
