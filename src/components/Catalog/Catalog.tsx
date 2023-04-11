@@ -25,12 +25,12 @@ export const Catalog = () => {
                     <h4 id={'antenna'}>Антенны</h4>
                 </div>
                 < div className={s.catalogItemMain}>
-                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                    <Tooltip title="LALAALALLALALA "
                              placement="top-end" arrow TransitionComponent={Zoom}>
                         <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
                     </Tooltip>
-                    <Tooltip title="LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA LALAALALLALALA"
+                    <Tooltip title="LALAALALLALALA"
                              placement="top-end" arrow TransitionComponent={Zoom}>
                         <div><CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
