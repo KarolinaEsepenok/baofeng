@@ -30,7 +30,7 @@ export const Catalog = () => {
                         <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
                     </Tooltip>
-                    <Tooltip title="LALAALALLALALA"
+                    <Tooltip title="LALAALALLALALA LALAALALLALALA"
                              placement="top-end" arrow TransitionComponent={Zoom}>
                         <div><CatalogItems img={batUV5R} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
