@@ -20,10 +20,10 @@ export const Battery = () => {
                     <h4  >Аккумуляторы</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'32,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'28,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'gdhdhhdhdh'}/>
 
                 </div></div>
