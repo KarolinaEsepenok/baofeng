@@ -26,7 +26,8 @@ export const Headphones = () => {
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'31,00'} descriptionItem={'Наушники'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'Наушники'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'} descriptionItem={'Наушники'}/>
-
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'} descriptionItem={'Наушники'}/>
 
                 </div></div>
         <Footer/></div>
