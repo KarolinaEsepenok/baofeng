@@ -8,28 +8,36 @@ import arrowLeft from "../../../assets/img/arrowLeft.svg"
 import Headers from '../../common/Header/Headers';
 import Greating from '../../pages/Main/Greating/Greating';
 import {Footer} from '../../common/Footer/Footer';
+
 export const Headphones = () => {
     return (
         <div className={s.antennasCont}>
             <Headers/>
             <Greating/>
-            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft} alt={'back'}/>На главную страницу</Link>
+            <Link className={s.linkBack} to='/'><img className={s.imgBackHome} src={arrowLeft} alt={'back'}/>На главную
+                страницу</Link>
             <div className={s.catalogContainer}>
 
                 <div className={s.nameLink}>
-                    <h4 >Наушники</h4>
+                    <h4>Наушники</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'48,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'}price={'30,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'31,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'} descriptionItem={'Наушники'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'} descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'48,00'}
+                                  descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'}
+                                  descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
+                                  descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'31,00'}
+                                  descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'20,00'}
+                                  descriptionItem={'Наушники'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'15,00'}
+                                  descriptionItem={'Наушники'}/>
 
-                </div></div>
-        <Footer/></div>
-    );
-};
+
+                </div>
+            </div>
+            <Footer/></div>
+    )
+}
