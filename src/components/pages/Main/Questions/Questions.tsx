@@ -75,6 +75,34 @@ export const Questions= ()=> {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
+                    <Typography>Accordion 2</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum d
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                >
+                    <Typography>Accordion 2</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum d
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                >
                     <Typography>Информация для покупателя</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
