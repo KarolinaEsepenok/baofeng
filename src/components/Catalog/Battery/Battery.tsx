@@ -9,6 +9,7 @@ import Headers from '../../common/Header/Headers';
 import Greating from '../../pages/Main/Greating/Greating';
 import {Footer} from '../../common/Footer/Footer';
 export const Battery = () => {
+    const items = new Array(12).fill('',0)
     return (
         <div className={s.antennasCont}>
             <Headers/>
@@ -20,6 +21,7 @@ export const Battery = () => {
                     <h4  >Аккумуляторы</h4>
                 </div>
                 <div className={s.catalogItemMain}>
+                    {items.map(()=>(<CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>))}
                     <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'32,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'28,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
