@@ -29,6 +29,9 @@ export const Battery = () => {
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
+                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
 
 
                 </div></div>
