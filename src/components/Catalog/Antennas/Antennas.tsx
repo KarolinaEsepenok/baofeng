@@ -13,6 +13,7 @@ import "react-tooltip/dist/react-tooltip.css";
 
 
 export const Antennas = () => {
+    const items = new Array(12).fill('',0)
     // @ts-ignore
     return (
         <div className={s.antennasCont}>
@@ -25,10 +26,14 @@ export const Antennas = () => {
                 <h4>Антенны</h4>
         </div>
             <div className={s.catalogItemMain}>
+
+
                 <CatalogItems id={"appTitle"} img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
 
                 <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'50,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'48,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+                <CatalogItems  img={walkie}nameItem={'Основные характеристики'}price={'29,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie}nameItem={'Основные характеристики'}price={'29,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
