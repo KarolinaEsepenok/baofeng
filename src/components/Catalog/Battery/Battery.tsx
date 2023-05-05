@@ -22,12 +22,7 @@ export const Battery = () => {
                 </div>
                 <div className={s.catalogItemMain}>
                     {items.map(()=>(<CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>))}
-                    <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'32,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'28,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'} descriptionItem={'gdhdhhdhdh'}/>
+
 
 
 
