@@ -33,10 +33,7 @@ export const Antennas = () => {
                 <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'50,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'48,00'} descriptionItem={'gdhdhhdhdh'}/>
                 <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie}nameItem={'Основные характеристики'}price={'29,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie}nameItem={'Основные характеристики'}price={'29,00'} descriptionItem={'gdhdhhdhdh'}/>
-                <CatalogItems  img={walkie}nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
+
 <ReactTooltip
                     anchorId="appTitle"
                     place="bottom"
