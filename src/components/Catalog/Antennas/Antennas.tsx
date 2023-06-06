@@ -13,7 +13,7 @@ import "react-tooltip/dist/react-tooltip.css";
 
 
 export const Antennas = () => {
-    const items = new Array(12).fill('',0)
+    const items = new Array(5).fill('',0)
     // @ts-ignore
     return (
         <div className={s.antennasCont}>
@@ -26,6 +26,7 @@ export const Antennas = () => {
                 <h4>Антенны</h4>
         </div>
             <div className={s.catalogItemMain}>
+                {items.map(()=>(<CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>))}
 
 
                 <CatalogItems id={"appTitle"} img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
