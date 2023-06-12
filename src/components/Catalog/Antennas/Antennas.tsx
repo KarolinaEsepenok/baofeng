@@ -29,11 +29,6 @@ export const Antennas = () => {
                 {items.map(()=>(<CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>))}
 
 
-                <CatalogItems id={"appTitle"} img={walkie} nameItem={'Основные характеристики'} price={'30,00'} descriptionItem={'gdhdhhdhdh'}/>
-
-                <CatalogItems  img={walkie} nameItem={'Основные характеристики'} price={'50,00'} descriptionItem={'gdhdhhdhdh'}/>
-
-
 <ReactTooltip
                     anchorId="appTitle"
                     place="bottom"
