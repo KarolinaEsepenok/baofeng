@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "16": "^0.0.2",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.16",
@@ -25,7 +26,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-tooltip": "^5.10.4",
     "react-tsparticles": "^2.8.0",
