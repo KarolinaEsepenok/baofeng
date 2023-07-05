@@ -27,8 +27,8 @@ export const Antennas = () => {
         </div>
             <div className={s.catalogItemMain}>
                 {items.map(()=>(<CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>))}
-
-
+                <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>
+                <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'32/00'} descriptionItem={'lalalallalal'}/>
 <ReactTooltip
                     anchorId="appTitle"
                     place="bottom"
