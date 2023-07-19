@@ -76,7 +76,7 @@ export const Catalog = () => {
                                   descriptionItem={'gdhdhhdhdh'}/>
 
                 </div>
-                <Link className={s.linkToCatalog} to={'/headphones'}>Посмотреть все</Link></div>
+                <Link className={s.linkToCatalog} to={'/headphones'}>Смотреть все</Link></div>
 
 
         </div>
