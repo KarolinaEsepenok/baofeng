@@ -30,10 +30,11 @@ export const Catalog = () => {
                         <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
                     </Tooltip>
-
+                    <Tooltip title="LALAALALLALALA "
+                             placement="top-end" arrow TransitionComponent={Zoom}>
                         <div><CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
                                            descriptionItem={'gdhdhhdhdh'}/></div>
-
+                    </Tooltip>
 
                 </div>
                 <Link className={s.linkToCatalog} to={'/antennas'}>Посмотреть все</Link></div>
@@ -75,7 +76,7 @@ export const Catalog = () => {
                                   descriptionItem={'gdhdhhdhdh'}/>
 
                 </div>
-                <Link className={s.linkToCatalog} to={'/headphones'}>Посмотреть все</Link></div>
+                <Link className={s.linkToCatalog} to={'/headphones'}>Смотреть все</Link></div>
 
 
         </div>
