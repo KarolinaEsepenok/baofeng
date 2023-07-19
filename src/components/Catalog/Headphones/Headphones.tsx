@@ -22,8 +22,7 @@ export const Headphones = () => {
                     <h4>Наушники</h4>
                 </div>
                 <div className={s.catalogItemMain}>
-                    <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'48,00'}
-                                  descriptionItem={'Наушники'}/>
+
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'34,00'}
                                   descriptionItem={'Наушники'}/>
                     <CatalogItems img={walkie} nameItem={'Основные характеристики'} price={'30,00'}
